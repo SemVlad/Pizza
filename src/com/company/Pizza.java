@@ -1,14 +1,30 @@
+/**
+ * Класс, в котором описывается создание пиццы
+ *
+ * @author Семирозум Владимир
+ */
 package com.company;
 
 public class Pizza {
 
-    // поля
+    /**
+     * Поля класса для создания пиццы
+     *
+     * @param cost - стоимость
+     * @param basis - здесь хранится ссылка на класс, в котором создается геометрия (основа)
+     * @param composition - состав
+     * @param name - название
+     */
     private double cost;
-    private Circle basis;   // может ли бить тип Класс приватным и какова логика ()
+    private Circle basis;
     private String composition;
     private String name;
 
-    // конструктор
+    /**
+     * Конструктор класса, которы принимает входные данные для создания пиццы.
+     * Также создается "геометрическая основа" для пиццы, для ее создания передаем в конструктор
+     * велечину радиуса.
+     */
     public Pizza(String name, String composition, double cost, double diameter) {
         this.name = name;
         this.composition = composition;
@@ -16,7 +32,9 @@ public class Pizza {
         this.basis = new Circle(diameter / 2);
     }
 
-    // геттери для подальшого доступу до полів
+    /**
+     * Блок методов, возращающие параметры
+     */
     public double getCost() {
         return cost;
     }
