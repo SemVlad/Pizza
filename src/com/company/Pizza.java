@@ -23,7 +23,7 @@ public class Pizza {
     /**
      * Конструктор класса, которы принимает входные данные для создания пиццы.
      * Также создается "геометрическая основа" для пиццы, для ее создания передаем в конструктор
-     * велечину радиуса.
+     * класса Circle велечину радиуса.
      */
     public Pizza(String name, String composition, double cost, double diameter) {
         this.name = name;
